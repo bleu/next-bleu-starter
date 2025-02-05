@@ -17,7 +17,7 @@ export default function NavLink({ href, children }: NavLinkProps) {
     <Link
       href={href}
       className={cn(
-        "transition-colors duration-200 text-content-foreground hover:text-primary/80",
+        "text-content-foreground hover:text-primary/80",
         isActive && "text-primary "
       )}
     >

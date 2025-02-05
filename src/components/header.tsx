@@ -5,6 +5,8 @@ import Link from "next/link";
 import { Moon } from "lucide-react";
 import { useThemeStore } from "@/store/useThemeStore";
 import NavLink from "./nav-link";
+import { ConnectWalletButton } from "./connect-wallet-button";
+import { Button } from "./ui/button";
 
 const Header = () => {
   const { toggleTheme } = useThemeStore();
@@ -20,13 +22,15 @@ const Header = () => {
         <NavLink href="/">Home</NavLink>
         <NavLink href="/theme-showcase">Theme Showcase</NavLink>
       </div>
-      <div className="flex gap-2">
-        <button
-          className="flex  items-center rounded-full bg-primary/10 p-1"
+      <div className="flex items-center gap-2">
+        <ConnectWalletButton />
+        <Button
+          variant="ghost"
+          className="flex items-center justify-center rounded-full bg-primary/10 p-1 w-8 h-8 "
           onClick={() => toggleTheme()}
         >
           <Moon size={18} className="text-primary" />
-        </button>
+        </Button>
       </div>
     </header>
   );

@@ -3,7 +3,7 @@ import { Rubik } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Header from "@/components/header";
-import { ThemeProvider } from "@/providers/theme-proviver";
+import { Providers } from "@/providers";
 
 const rubik = Rubik({
   weight: ["400", "500", "700"],
@@ -23,10 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(rubik.className, "bg-background text-foreground")}>
-        <ThemeProvider>
+        <Providers>
           <Header />
           {children}
-        </ThemeProvider>
+        </Providers>
       </body>
     </html>
   );
