@@ -37,7 +37,7 @@ const config = createConfig(
     appDescription: "Template for web3 next projects",
     appUrl: "http://localhost:3000",
     appIcon: "https://cdn-icons-png.flaticon.com/128/4064/4064205.png",
-  })
+  }),
 );
 
 const queryClient = new QueryClient();
