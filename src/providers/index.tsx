@@ -1,5 +1,5 @@
 "use client";
-import { type ReactNode } from "react";
+import type { ReactNode } from "react";
 import { Web3Provider } from "./web3-provider";
 import { ThemeProvider } from "./theme-proviver";
 

@@ -1,7 +1,8 @@
 "use client";
 
-import React from "react";
 import { useThemeStore } from "@/store/useThemeStore";
+import React from "react";
+import { Button } from "./ui/button";
 
 export default function ThemeShowcase() {
   const { theme, toggleTheme } = useThemeStore();
@@ -15,12 +16,12 @@ export default function ThemeShowcase() {
 
         <div className="flex flex-col items-center gap-2">
           <p className="text-lg text-foreground">Current theme: {theme}</p>
-          <button
+          <Button
             onClick={toggleTheme}
             className="px-4 py-2 bg-primary text-primary-foreground rounded-md hover:opacity-90 transition-opacity"
           >
             Toggle Theme
-          </button>
+          </Button>
         </div>
 
         <section className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-2xl">

@@ -1,11 +1,11 @@
 "use client";
 
-import React from "react";
-import Link from "next/link";
-import { Moon } from "lucide-react";
 import { useThemeStore } from "@/store/useThemeStore";
-import NavLink from "./nav-link";
+import { Moon } from "lucide-react";
+import Link from "next/link";
+import React from "react";
 import { ConnectWalletButton } from "./connect-wallet-button";
+import NavLink from "./nav-link";
 import { Button } from "./ui/button";
 
 const Header = () => {
